@@ -1,0 +1,7 @@
+{
+  "SlackApiKey":"",
+  "GitlabApiKey":"",
+  "SSHUsername":"",
+  "SSHPassword":"",
+  "BotName":""
+}
