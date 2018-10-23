@@ -17,8 +17,8 @@ func CreatePipeline(pipelines []MessagePipeline) func (event *slack.MessageEvent
 	}
 }
 
-func CreatePipelineInstance() []MessagePipeline{
+func CreatePipelineInstance(botname string) []MessagePipeline{
 	return []MessagePipeline{
-		NewEchoMessagePipeline(BOTNAME),
+		NewEchoMessagePipeline(botname),
 	}
 }

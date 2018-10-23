@@ -85,5 +85,5 @@ func (m MergeRequestDeployMessageHandler) OnMessageReceive(event *slack.MessageE
 		fmt.Println(p)
 	}
 
-	m.rtm.SendMessage(m.rtm.NewOutgoingMessage(fmt.Sprintf("deploying merge request %d ที่ port %d", mrNumber, port), event.Channel))
+	m.rtm.SendMessage(m.rtm.NewOutgoingMessage(fmt.Sprintf("deploying merge request %d at port %d", mrNumber, port), event.Channel))
 }

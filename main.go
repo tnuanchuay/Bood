@@ -24,7 +24,7 @@ func main(){
 	git := gitlab.NewClient(nil, configuration.GitlabApiKey)
 	git.SetBaseURL("http://gitlab.grafana48.com/api/v4")
 
-	pipelineInstances := CreatePipelineInstance()
+	pipelineInstances := CreatePipelineInstance(configuration.BotName)
 	pipeline := CreatePipeline(pipelineInstances)
 	handlers := CreateHandler(rtm, configuration.BotName, git, sshAuth)
 

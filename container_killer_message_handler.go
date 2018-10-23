@@ -110,5 +110,5 @@ func (m ContainerKillerMessageHandler) OnMessageReceive(event *slack.MessageEven
 		return
 	}
 
-	m.rtm.SendMessage(m.rtm.NewOutgoingMessage("รัน " + command + " เสร็จแล้ว", event.Channel))
+	m.rtm.SendMessage(m.rtm.NewOutgoingMessage("killing container has been done by command " + command, event.Channel))
 }
